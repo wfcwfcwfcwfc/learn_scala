@@ -68,28 +68,28 @@ class 模式匹配 {
 }
 
 
-//Case class 模式匹配 学校门禁程序
-class Person
-case class Teacher(name: String, subject: String) extends Person
-case class Student(name: String, classroom: String) extends Person
-case class Worker(name: String, field: String) extends Person
-
-def judgeItentity(p: Person): Unit = {
-  p match {
-    case Teacher(name, subject) => println("Teacher: " + name + ". you teach: " + subject)
-    case Student(name, classroom) => println("Student: " + name + ". your class is: " + classroom)
-    case _ => println("please leave school")
-  }
-}
-
-//Option 模式匹配
-val grades = Map("Leo" -> "A", "Jack" -> "B", "Tom"->"C")
-def getGrade(name: String): Unit = {
-  var grade = grades.get(name)
-  grade match {
-    case Some(grade) => println("your grade is: " + grade)
-    case None => println("your grade is not in your system.")
-  }
-}
+////Case class 模式匹配 学校门禁程序
+//class Person
+//case class Teacher(name: String, subject: String) extends Person
+//case class Student(name: String, classroom: String) extends Person
+//case class Worker(name: String, field: String) extends Person
+//
+//def judgeItentity(p: Person): Unit = {
+//  p match {
+//    case Teacher(name, subject) => println("Teacher: " + name + ". you teach: " + subject)
+//    case Student(name, classroom) => println("Student: " + name + ". your class is: " + classroom)
+//    case _ => println("please leave school")
+//  }
+//}
+//
+////Option 模式匹配
+//val grades = Map("Leo" -> "A", "Jack" -> "B", "Tom"->"C")
+//def getGrade(name: String): Unit = {
+//  var grade = grades.get(name)
+//  grade match {
+//    case Some(grade) => println("your grade is: " + grade)
+//    case None => println("your grade is not in your system.")
+//  }
+//}
 
 
