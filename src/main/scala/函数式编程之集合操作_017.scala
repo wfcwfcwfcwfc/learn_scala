@@ -1,6 +1,6 @@
 import scala.collection.mutable
 
-class 函数式编程之集合操作 {
+class 函数式编程之集合操作_017 {
 
   val list = List(1,2,3,4)
   0 :: list

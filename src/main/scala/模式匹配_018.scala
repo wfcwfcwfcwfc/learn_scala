@@ -9,7 +9,7 @@ import java.io.{FileNotFoundException, IOException}
  * 5. Option-Some-None匹配
  *
  */
-class 模式匹配 {
+class 模式匹配_018 {
   def judgeGrade(name: String, grade: String): Unit = {
     grade match {
         //类似Java里的switch语句 更强大一些
